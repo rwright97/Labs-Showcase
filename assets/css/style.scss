@@ -1,0 +1,186 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Full site background */
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-image: url("{{ '/Pictures/cybersecurity-background.png' | relative_url }}");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #c9d1d9;
+}
+
+/* Main content readability panel */
+.markdown-body,
+.container,
+.container-lg,
+.wrapper,
+section,
+main,
+.page-content {
+  background-color: rgba(8, 13, 22, 0.82);
+  color: #c9d1d9;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f0f6fc;
+}
+
+/* Links */
+a {
+  color: #58a6ff;
+}
+
+/* Tables */
+table {
+  background-color: rgba(13, 17, 23, 0.88);
+}
+
+th {
+  background-color: rgba(22, 27, 34, 0.95);
+  color: #f0f6fc;
+}
+
+td {
+  background-color: rgba(13, 17, 23, 0.88);
+  color: #c9d1d9;
+}
+
+/* Code blocks */
+.markdown-body pre,
+.markdown-body pre code,
+pre,
+pre code {
+  background: rgba(3, 10, 22, 0.95) !important;
+  color: #d6f3ff !important;
+  border-radius: 8px;
+}
+
+.markdown-body pre,
+pre {
+  border: 1px solid rgba(0, 183, 255, 0.35);
+  border-left: 4px solid #00b7ff;
+  padding: 16px 20px;
+  margin: 18px 0 28px 0;
+  overflow-x: auto;
+  box-shadow: 0 0 18px rgba(0, 183, 255, 0.08);
+}
+
+.markdown-body pre code,
+pre code {
+  background: transparent !important;
+  color: #d6f3ff !important;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+/* Inline code only */
+.markdown-body p code,
+p code,
+li code {
+  background: rgba(3, 10, 22, 0.9) !important;
+  color: #79c0ff !important;
+  border: 1px solid rgba(88, 166, 255, 0.25);
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+
+/* Images */
+img {
+  border-radius: 10px;
+}
+
+/* -------------------------------------------------------
+   Markdown code block syntax highlighting readability fix
+   ------------------------------------------------------- */
+
+/* Force all code-block syntax tokens to readable defaults */
+.markdown-body .highlight,
+.markdown-body .highlight pre,
+.markdown-body .highlight code,
+.markdown-body .highlight span,
+.markdown-body pre,
+.markdown-body pre code,
+.markdown-body pre code span,
+.highlight,
+.highlight pre,
+.highlight code,
+.highlight span,
+.highlighter-rouge,
+.highlighter-rouge pre,
+.highlighter-rouge code,
+.highlighter-rouge span {
+  color: #d6f3ff !important;
+}
+
+/* Commands, shell built-ins, and keywords */
+.markdown-body .highlight .k,
+.markdown-body .highlight .kd,
+.markdown-body .highlight .kn,
+.markdown-body .highlight .kp,
+.markdown-body .highlight .kr,
+.markdown-body .highlight .nb,
+.markdown-body .highlight .nt,
+.markdown-body .highlight .nc,
+.markdown-body .highlight .nf {
+  color: #38bdf8 !important;
+}
+
+/* Strings and quoted values */
+.markdown-body .highlight .s,
+.markdown-body .highlight .s1,
+.markdown-body .highlight .s2,
+.markdown-body .highlight .sb,
+.markdown-body .highlight .sc,
+.markdown-body .highlight .sd,
+.markdown-body .highlight .dl {
+  color: #a7f3d0 !important;
+}
+
+/* Numbers */
+.markdown-body .highlight .m,
+.markdown-body .highlight .mi,
+.markdown-body .highlight .mf,
+.markdown-body .highlight .mh {
+  color: #fbbf24 !important;
+}
+
+/* Comments */
+.markdown-body .highlight .c,
+.markdown-body .highlight .c1,
+.markdown-body .highlight .cm,
+.markdown-body .highlight .cp {
+  color: #94a3b8 !important;
+}
+
+/* Operators, punctuation, flags, and error-colored tokens */
+.markdown-body .highlight .o,
+.markdown-body .highlight .ow,
+.markdown-body .highlight .p,
+.markdown-body .highlight .err {
+  color: #cbd5e1 !important;
+}
+
+/* Variables, paths, and names */
+.markdown-body .highlight .nv,
+.markdown-body .highlight .na,
+.markdown-body .highlight .n,
+.markdown-body .highlight .nx {
+  color: #e6edf3 !important;
+}
